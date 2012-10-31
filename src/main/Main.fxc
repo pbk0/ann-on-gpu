@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model modelID="fxc" modelVersion="69" rootInstance="DesignModel1" version="1">
+    <Instance classID="DesignModel" instanceID="DesignModel1">
+        <List name="stateVariables">
+            <Item value="inst:StateVariableModel1"/>
+        </List>
+        <List name="resources">
+            <Item value="inst:LinearGradientModel1"/>
+            <Item value="inst:LineChartSeriesModel1"/>
+            <Item value="inst:LineChartSeriesModel2"/>
+            <Item value="inst:LineChartSeriesModel3"/>
+            <Item value="inst:LineChartSeriesModel4"/>
+            <Item value="inst:LineChartSeriesModel5"/>
+            <Item value="inst:LineChartSeriesModel6"/>
+        </List>
+        <List name="dataSources"/>
+        <List name="templates"/>
+        <List name="customClasses"/>
+        <Reference name="scene" value="inst:SceneModel1"/>
+        <Reference name="designWidth" value="flt:1024.0"/>
+        <Reference name="designHeight" value="flt:768.0"/>
+        <Reference name="designProfile" value="profile:DESKTOP"/>
+        <Reference name="synchronizeDeviceAndSceneSizes" value="bool:true"/>
+    </Instance>
+    <Instance classID="StateVariableModel" instanceID="StateVariableModel1">
+        <Reference name="instanceName" value="str:mainState"/>
+        <List name="states"/>
+        <Reference name="startState" value="null"/>
+        <Reference name="stateChangeType" value="statechange:PAUSE_AND_PLAY_FROM_START"/>
+        <Reference name="doNotAnimateOnce" value="bool:true"/>
+        <Reference name="defaultInterpolator" value="interpolator:DISCRETE"/>
+        <Reference name="defaultDuration" value="int:0"/>
+        <Reference name="onTransitionFinished" value="null"/>
+    </Instance>
+    <Instance classID="LinearGradientModel" instanceID="LinearGradientModel1">
+        <Reference name="instanceName" value="str:linearGradient"/>
+        <Reference name="stops" value="prop2:7,NOT_SET,4,null,4,null,70,anim:,,sequence:24,gradientstop:0.0,#CCCCCC24,gradientstop:1.0,#EEEEEE,4,null,"/>
+    </Instance>
+    <Instance classID="LineChartSeriesModel" instanceID="LineChartSeriesModel1">
+        <Reference name="instanceName" value="str:annDataSeries"/>
+        <Reference name="name" value="prop2:7,NOT_SET,4,null,4,null,19,anim:,,str:ANN Data,4,null,"/>
+        <Reference name="symbolCreator" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,str:null,4,null,"/>
+        <Reference name="data" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+    </Instance>
+    <Instance classID="LineChartSeriesModel" instanceID="LineChartSeriesModel2">
+        <Reference name="instanceName" value="str:trainingDataSeries"/>
+        <Reference name="name" value="prop2:7,NOT_SET,4,null,4,null,24,anim:,,str:Training Data,4,null,"/>
+    </Instance>
+    <Instance classID="LineChartSeriesModel" instanceID="LineChartSeriesModel3">
+        <Reference name="instanceName" value="str:lineChartSeries"/>
+        <Reference name="name" value="prop2:7,NOT_SET,4,null,4,null,26,anim:,,str:lineChartSeries,4,null,"/>
+    </Instance>
+    <Instance classID="LineChartSeriesModel" instanceID="LineChartSeriesModel4">
+        <Reference name="instanceName" value="str:lineChartSeries2"/>
+        <Reference name="name" value="prop2:7,NOT_SET,4,null,4,null,27,anim:,,str:lineChartSeries2,4,null,"/>
+    </Instance>
+    <Instance classID="LineChartSeriesModel" instanceID="LineChartSeriesModel5">
+        <Reference name="instanceName" value="str:cpuDataChartSeries"/>
+        <Reference name="name" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,str:CPU,4,null,"/>
+        <Reference name="data" value="prop2:7,NOT_SET,4,null,4,null,1070,anim:,,sequence:24,linechartdata:512.0,0.5425,linechartdata:1024.0,1.9124,linechartdata:1536.0,4.426,linechartdata:2048.0,7.83727,linechartdata:2560.0,11.82227,linechartdata:3072.0,17.03227,linechartdata:3584.0,23.63927,linechartdata:4096.0,30.26527,linechartdata:4608.0,38.65427,linechartdata:5120.0,47.32427,linechartdata:5632.0,58.26627,linechartdata:6144.0,68.25526,linechartdata:6656.0,82.5326,linechartdata:7168.0,92.0527,linechartdata:7680.0,105.2927,linechartdata:8192.0,121.0827,linechartdata:8704.0,136.8627,linechartdata:9216.0,151.7527,linechartdata:9728.0,169.6228,linechartdata:10240.0,187.0228,linechartdata:10752.0,206.5128,linechartdata:11264.0,226.5428,linechartdata:11776.0,247.2728,linechartdata:12288.0,270.6928,linechartdata:12800.0,292.4728,linechartdata:13312.0,317.0628,linechartdata:13824.0,343.1428,linechartdata:14336.0,367.4128,linechartdata:14848.0,394.4428,linechartdata:15360.0,421.6628,linechartdata:15872.0,451.2628,linechartdata:16384.0,482.5327,linechartdata:16896.0,512.628,linechartdata:17408.0,545.0828,linechartdata:17920.0,584.21,4,null,"/>
+    </Instance>
+    <Instance classID="LineChartSeriesModel" instanceID="LineChartSeriesModel6">
+        <Reference name="instanceName" value="str:gpuDataChartSeries"/>
+        <Reference name="name" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,str:GPU,4,null,"/>
+        <Reference name="data" value="prop2:7,NOT_SET,4,null,4,null,1044,anim:,,sequence:25,linechartdata:512.0,0.72526,linechartdata:1024.0,1.48326,linechartdata:1536.0,2.16526,linechartdata:2048.0,2.93326,linechartdata:2560.0,3.54126,linechartdata:3072.0,4.10526,linechartdata:3584.0,5.17226,linechartdata:4096.0,5.66526,linechartdata:4608.0,6.55826,linechartdata:5120.0,7.47126,linechartdata:5632.0,8.16526,linechartdata:6144.0,9.08826,linechartdata:6656.0,10.3926,linechartdata:7168.0,11.7325,linechartdata:7680.0,12.125,linechartdata:8192.0,13.526,linechartdata:8704.0,13.7426,linechartdata:9216.0,15.7626,linechartdata:9728.0,16.0327,linechartdata:10240.0,16.6527,linechartdata:10752.0,18.3727,linechartdata:11264.0,18.7527,linechartdata:11776.0,19.9127,linechartdata:12288.0,20.7327,linechartdata:12800.0,22.2827,linechartdata:13312.0,23.7627,linechartdata:13824.0,24.6227,linechartdata:14336.0,26.1227,linechartdata:14848.0,27.3327,linechartdata:15360.0,28.2127,linechartdata:15872.0,30.6827,linechartdata:16384.0,31.8227,linechartdata:16896.0,32.9327,linechartdata:17408.0,34.1327,linechartdata:17920.0,35.08,4,null,"/>
+    </Instance>
+    <Instance classID="SceneModel" instanceID="SceneModel1">
+        <Reference name="instanceName" value="str:scene"/>
+        <List name="content">
+            <Item value="inst:RectangleShapeModel1"/>
+            <Item value="inst:RectangleShapeModel2"/>
+            <Item value="inst:RectangleShapeModel3"/>
+            <Item value="inst:RectangleShapeModel4"/>
+            <Item value="inst:ButtonModel1"/>
+            <Item value="inst:ButtonModel2"/>
+            <Item value="inst:ButtonModel3"/>
+            <Item value="inst:LineChartModel1"/>
+            <Item value="inst:LabelModel1"/>
+            <Item value="inst:SliderModel1"/>
+            <Item value="inst:ProgressBarModel1"/>
+            <Item value="inst:TextBoxModel1"/>
+            <Item value="inst:LabelModel2"/>
+            <Item value="inst:LabelModel3"/>
+            <Item value="inst:LabelModel4"/>
+            <Item value="inst:LabelModel5"/>
+            <Item value="inst:LabelModel6"/>
+            <Item value="inst:LabelModel7"/>
+            <Item value="inst:ChoiceBoxModel1"/>
+            <Item value="inst:LabelModel8"/>
+            <Item value="inst:SliderModel2"/>
+            <Item value="inst:LabelModel9"/>
+            <Item value="inst:LabelModel10"/>
+            <Item value="inst:ButtonModel4"/>
+            <Item value="inst:ButtonModel5"/>
+            <Item value="inst:ButtonModel6"/>
+            <Item value="inst:ProgressIndicatorModel1"/>
+            <Item value="inst:ButtonModel7"/>
+            <Item value="inst:ButtonModel8"/>
+            <Item value="inst:ChoiceBoxModel2"/>
+            <Item value="inst:TextBoxModel2"/>
+            <Item value="inst:LabelModel11"/>
+            <Item value="inst:RectangleShapeModel5"/>
+            <Item value="inst:LineChartModel2"/>
+        </List>
+        <Reference name="width" value="prop2:7,NOT_SET,4,null,4,null,17,anim:,,flt:1024.0,4,null,"/>
+        <Reference name="height" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:768.0,4,null,"/>
+        <Reference name="cursor" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+        <Reference name="fill" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+        <Reference name="generateSceneInstance" value="bool:true"/>
+        <Reference name="generateGetDesignSceneFunction" value="bool:true"/>
+        <Reference name="generateLayoutXYForRootLevelComponents" value="bool:true"/>
+    </Instance>
+    <Instance classID="RectangleShapeModel" instanceID="RectangleShapeModel1">
+        <Reference name="instanceName" value="str:backGroundRectangle"/>
+        <Reference name="opacity" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:1.0,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:-1.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:-1.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="onMouseClicked" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+        <Reference name="onMouseMoved" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="fill" value="prop2:7,NOT_SET,4,null,4,null,32,anim:,,inst:LinearGradientModel1,4,null,"/>
+        <Reference name="width" value="prop2:7,NOT_SET,4,null,4,null,17,anim:,,flt:1024.0,4,null,"/>
+        <Reference name="height" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:768.0,4,null,"/>
+        <Reference name="arcWidth" value="prop2:7,NOT_SET,4,null,4,null,19,anim:,,flt:68.26667,4,null,"/>
+        <Reference name="arcHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:51.2,4,null,"/>
+    </Instance>
+    <Instance classID="RectangleShapeModel" instanceID="RectangleShapeModel2">
+        <Reference name="instanceName" value="str:rectangle1"/>
+        <Reference name="opacity" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:0.1,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:730.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:95.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="width" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:260.0,4,null,"/>
+        <Reference name="height" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:120.0,4,null,"/>
+        <Reference name="arcWidth" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:15.0,4,null,"/>
+        <Reference name="arcHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:15.0,4,null,"/>
+    </Instance>
+    <Instance classID="RectangleShapeModel" instanceID="RectangleShapeModel3">
+        <Reference name="instanceName" value="str:rectangle2"/>
+        <Reference name="opacity" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:0.15,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:730.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:230.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="width" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:260.0,4,null,"/>
+        <Reference name="height" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:205.0,4,null,"/>
+        <Reference name="arcWidth" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:15.0,4,null,"/>
+        <Reference name="arcHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:15.0,4,null,"/>
+    </Instance>
+    <Instance classID="RectangleShapeModel" instanceID="RectangleShapeModel4">
+        <Reference name="instanceName" value="str:rectangle3"/>
+        <Reference name="opacity" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:0.1,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:730.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:450.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="width" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:260.0,4,null,"/>
+        <Reference name="height" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:285.0,4,null,"/>
+        <Reference name="arcWidth" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:15.0,4,null,"/>
+        <Reference name="arcHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:15.0,4,null,"/>
+    </Instance>
+    <Instance classID="ButtonModel" instanceID="ButtonModel1">
+        <Reference name="instanceName" value="str:minimizeButton"/>
+        <Reference name="cursor" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,cursor:HAND,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:930.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:25.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:30.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:20.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,12,anim:,,str:-,4,null,"/>
+        <Reference name="graphicTextGap" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:0.0,4,null,"/>
+        <Reference name="graphic" value="null"/>
+        <Reference name="action" value="prop2:7,NOT_SET,4,null,4,null,25,anim:,,str:minimizeWindow,4,null,"/>
+    </Instance>
+    <Instance classID="ButtonModel" instanceID="ButtonModel2">
+        <Reference name="instanceName" value="str:helpButton"/>
+        <Reference name="visible" value="prop2:7,NOT_SET,4,null,4,null,17,anim:,,bool:false,4,null,"/>
+        <Reference name="cursor" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,cursor:HAND,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:895.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:25.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:30.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:20.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,12,anim:,,str:?,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="ButtonModel" instanceID="ButtonModel3">
+        <Reference name="instanceName" value="str:closeButton"/>
+        <Reference name="cursor" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,cursor:HAND,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:965.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:25.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:30.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:20.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,12,anim:,,str:x,4,null,"/>
+        <Reference name="graphic" value="null"/>
+        <Reference name="action" value="prop2:7,NOT_SET,4,null,4,null,22,anim:,,str:closeWindow,4,null,"/>
+    </Instance>
+    <Instance classID="LineChartModel" instanceID="LineChartModel1">
+        <Reference name="instanceName" value="str:lineChart"/>
+        <Reference name="cursor" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+        <Reference name="managed" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,bool:true,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:17.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:85.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:698.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:529.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="onMouseEntered" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+        <Reference name="onMouseExited" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+        <Reference name="onMouseMoved" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="chartBackgroundFill" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,color:BLACK,4,null,"/>
+        <Reference name="chartBackgroundStroke" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,color:BLACK,4,null,"/>
+        <Reference name="hoverStrokeWidth" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:1.0,4,null,"/>
+        <Reference name="legendGap" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:8.0,4,null,"/>
+        <Reference name="legendSide" value="prop2:7,NOT_SET,4,null,4,null,23,anim:,,chartside:BOTTOM,4,null,"/>
+        <Reference name="title" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,str:,4,null,"/>
+        <Reference name="customBackgroundContent" value="null"/>
+        <Reference name="showSymbols" value="prop2:7,NOT_SET,4,null,4,null,17,anim:,,bool:false,4,null,"/>
+        <Reference name="symbolCreator" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+        <Reference name="data" value="prop2:7,NOT_SET,4,null,4,null,74,anim:,,sequence:26,inst:LineChartSeriesModel226,inst:LineChartSeriesModel1,4,null,"/>
+        <Reference name="xAxis" value="inst:NumberAxisModel1"/>
+        <Reference name="yAxis" value="inst:NumberAxisModel2"/>
+    </Instance>
+    <Instance classID="NumberAxisModel" instanceID="NumberAxisModel1">
+        <Reference name="instanceName" value="str:inputAxis"/>
+        <Reference name="cursor" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Reference name="effect" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="label" value="prop2:7,NOT_SET,4,null,4,null,20,anim:,,str:input &lt;x&gt;,4,null,"/>
+        <Reference name="upperBound" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:1.0,4,null,"/>
+        <Reference name="lowerBound" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:0.0,4,null,"/>
+        <Reference name="formatTickLabel" value="prop2:7,NOT_SET,4,null,4,null,35,anim:,,str:inputAxisFormatTickLabel,4,null,"/>
+        <Reference name="minorTickCount" value="prop2:7,NOT_SET,4,null,4,null,12,anim:,,int:0,4,null,"/>
+        <Reference name="tickUnit" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:0.05,4,null,"/>
+    </Instance>
+    <Instance classID="NumberAxisModel" instanceID="NumberAxisModel2">
+        <Reference name="instanceName" value="str:outputAxis"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="label" value="prop2:7,NOT_SET,4,null,4,null,21,anim:,,str:output &lt;y&gt;,4,null,"/>
+        <Reference name="upperBound" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:1.0,4,null,"/>
+        <Reference name="lowerBound" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:-1.0,4,null,"/>
+        <Reference name="formatTickLabel" value="prop2:7,NOT_SET,4,null,4,null,36,anim:,,str:outputAxisFormatTickLabel,4,null,"/>
+        <Reference name="minorTickCount" value="prop2:7,NOT_SET,4,null,4,null,12,anim:,,int:0,4,null,"/>
+        <Reference name="tickUnit" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:0.1,4,null,"/>
+    </Instance>
+    <Instance classID="LabelModel" instanceID="LabelModel1">
+        <Reference name="instanceName" value="str:timeTakenValueLabel"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:860.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:345.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:15.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,31,str:bind &quot;{durationOfTraining}&quot;,4,null,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="SliderModel" instanceID="SliderModel1">
+        <Reference name="instanceName" value="str:learningConstantSlider"/>
+        <Reference name="cursor" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,cursor:HAND,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:750.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:260.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:220.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:10.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="max" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:1.0,4,null,"/>
+        <Reference name="value" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:0.03,4,null,"/>
+        <Reference name="blockIncrement" value="prop2:7,NOT_SET,4,null,4,null,17,anim:,,flt:1.0E-5,4,null,"/>
+        <Reference name="labelFormatter" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+        <Reference name="showTickLabels" value="prop2:7,NOT_SET,4,null,4,null,17,anim:,,bool:false,4,null,"/>
+        <Reference name="showTickMarks" value="prop2:7,NOT_SET,4,null,4,null,17,anim:,,bool:false,4,null,"/>
+    </Instance>
+    <Instance classID="ProgressBarModel" instanceID="ProgressBarModel1">
+        <Reference name="instanceName" value="str:currentErrorProgressBar"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:750.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:405.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:220.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:12.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="progress" value="prop2:7,NOT_SET,4,null,26,str:bind currentError*10.0,4,null,4,null,"/>
+    </Instance>
+    <Instance classID="TextBoxModel" instanceID="TextBoxModel1">
+        <Reference name="instanceName" value="str:messageTextBox"/>
+        <Reference name="disable" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,bool:true,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:44.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:613.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:661.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:122.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Reference name="effect" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,16,str:bind message,4,null,4,null,"/>
+        <Reference name="editable" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,bool:true,4,null,"/>
+        <Reference name="columns" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:500.0,4,null,"/>
+        <Reference name="font" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+        <Reference name="lines" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:50.0,4,null,"/>
+    </Instance>
+    <Instance classID="LabelModel" instanceID="LabelModel2">
+        <Reference name="instanceName" value="str:trainingIterationLabel"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:750.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:300.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:15.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,41,anim:,,str:Training Iterations Completed:,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="LabelModel" instanceID="LabelModel3">
+        <Reference name="instanceName" value="str:trainingIterationValueLabel"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:908.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:300.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:15.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,48,str:bind &quot;{numberOfTrainingIterationsCompleted}&quot;,4,null,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="LabelModel" instanceID="LabelModel4">
+        <Reference name="instanceName" value="str:currentErrorLabel"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:750.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:390.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:15.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,25,anim:,,str:Current Error:,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="LabelModel" instanceID="LabelModel5">
+        <Reference name="instanceName" value="str:currentErrorValueLabel"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:860.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:390.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:15.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,25,str:bind &quot;{currentError}&quot;,4,null,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="LabelModel" instanceID="LabelModel6">
+        <Reference name="instanceName" value="str:learningConstantLabel"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:750.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:245.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:15.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,29,anim:,,str:Learning constant:,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="LabelModel" instanceID="LabelModel7">
+        <Reference name="instanceName" value="str:learningConstantValueLabel"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:860.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:245.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:15.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,41,str:bind &quot;{learningConstantSlider.value}&quot;,4,null,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="ChoiceBoxModel" instanceID="ChoiceBoxModel1">
+        <Reference name="instanceName" value="str:selectExecutionModeDropDown"/>
+        <Reference name="cursor" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,cursor:HAND,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:750.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:160.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:220.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:35.0,4,null,"/>
+        <Reference name="layoutInfoHPos" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,hpos:CENTER,4,null,"/>
+        <Reference name="layoutInfoVPos" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,vpos:CENTER,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="onMouseClicked" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+        <Reference name="onMouseReleased" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="items" value="prop2:7,NOT_SET,4,null,4,null,46,anim:,,sequence:12,str:CPU MODE12,str:GPU MODE,4,null,"/>
+    </Instance>
+    <Instance classID="LabelModel" instanceID="LabelModel8">
+        <Reference name="instanceName" value="str:timeTakenLabel"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:750.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:345.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:15.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,28,anim:,,str:Time taken in ms:,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="SliderModel" instanceID="SliderModel2">
+        <Reference name="instanceName" value="str:noOfPatternsSlider"/>
+        <Reference name="cursor" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,cursor:HAND,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:750.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:125.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:220.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="pickOnBounds" value="prop2:7,NOT_SET,4,null,4,null,17,anim:,,bool:false,4,null,"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="min" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:512.0,4,null,"/>
+        <Reference name="max" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,flt:17920.0,4,null,"/>
+        <Reference name="value" value="prop2:7,NOT_SET,4,null,4,null,17,anim:,,flt:1024.0,4,null,"/>
+        <Reference name="blockIncrement" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:512.0,4,null,"/>
+        <Reference name="clickToPosition" value="prop2:7,NOT_SET,4,null,4,null,17,anim:,,bool:false,4,null,"/>
+        <Reference name="majorTickUnit" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:25.0,4,null,"/>
+        <Reference name="minorTickCount" value="prop2:7,NOT_SET,4,null,4,null,12,anim:,,int:3,4,null,"/>
+        <Reference name="snapToTicks" value="prop2:7,NOT_SET,4,null,4,null,17,anim:,,bool:false,4,null,"/>
+    </Instance>
+    <Instance classID="LabelModel" instanceID="LabelModel9">
+        <Reference name="instanceName" value="str:noOfPatternsLabel"/>
+        <Reference name="opacity" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:1.0,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:750.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:110.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:15.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,30,anim:,,str:Number of patterns:,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="LabelModel" instanceID="LabelModel10">
+        <Reference name="instanceName" value="str:noOfPatternsValueLabel"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:860.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:110.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:15.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,29,str:bind &quot;{numberOfPatterns}&quot;,4,null,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="ButtonModel" instanceID="ButtonModel4">
+        <Reference name="instanceName" value="str:cpuVsGpuButton"/>
+        <Reference name="cursor" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,cursor:HAND,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:719.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:25.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:170.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:20.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="onMouseClicked" value="prop2:7,NOT_SET,4,null,4,null,39,anim:,,str:cpuVsGpuButtonOnMouseClicked,4,null,"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,32,anim:,,str:SHOW CPU VS GPU CHART,4,null,"/>
+        <Reference name="graphic" value="null"/>
+        <Reference name="action" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+    </Instance>
+    <Instance classID="ButtonModel" instanceID="ButtonModel5">
+        <Reference name="instanceName" value="str:resetButton"/>
+        <Reference name="disable" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,bool:true,4,null,"/>
+        <Reference name="cursor" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,cursor:HAND,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:910.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:655.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:60.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:60.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="onMouseClicked" value="prop2:7,NOT_SET,4,null,4,null,36,anim:,,str:resetButtonOnMouseClicked,4,null,"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,str:RESET,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="ButtonModel" instanceID="ButtonModel6">
+        <Reference name="instanceName" value="str:stopButton"/>
+        <Reference name="disable" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,bool:true,4,null,"/>
+        <Reference name="cursor" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,cursor:HAND,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:830.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:655.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:60.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:60.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="onMouseClicked" value="prop2:7,NOT_SET,4,null,4,null,35,anim:,,str:stopButtonOnMouseClicked,4,null,"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,str:STOP,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="ProgressIndicatorModel" instanceID="ProgressIndicatorModel1">
+        <Reference name="instanceName" value="str:trainingProgressIndicator"/>
+        <Reference name="visible" value="prop2:7,NOT_SET,4,null,29,str:bind not isTrainingPaused,4,null,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:44.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:614.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:661.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:121.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Reference name="effect" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+    </Instance>
+    <Instance classID="ButtonModel" instanceID="ButtonModel7">
+        <Reference name="instanceName" value="str:startButton"/>
+        <Reference name="disable" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,bool:true,4,null,"/>
+        <Reference name="cursor" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,cursor:HAND,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:750.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:655.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:60.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:60.0,4,null,"/>
+        <Reference name="layoutInfoHFill" value="prop2:7,NOT_SET,4,null,4,null,17,anim:,,bool:false,4,null,"/>
+        <Reference name="layoutInfoVFill" value="prop2:7,NOT_SET,4,null,4,null,17,anim:,,bool:false,4,null,"/>
+        <Reference name="layoutInfoHGrow" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+        <Reference name="layoutInfoVGrow" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="onMouseClicked" value="prop2:7,NOT_SET,4,null,4,null,36,anim:,,str:startButtonOnMouseClicked,4,null,"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,str:START,4,null,"/>
+        <Reference name="graphic" value="null"/>
+        <Reference name="action" value="prop2:7,NOT_SET,4,null,4,null,11,anim:,,null,4,null,"/>
+    </Instance>
+    <Instance classID="ButtonModel" instanceID="ButtonModel8">
+        <Reference name="instanceName" value="str:computeButton"/>
+        <Reference name="cursor" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,cursor:HAND,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:750.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:600.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:100.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:30.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,str:COMPUTE,4,null,"/>
+        <Reference name="graphic" value="null"/>
+        <Reference name="action" value="prop2:7,NOT_SET,4,null,4,null,30,anim:,,str:computeButtonAction,4,null,"/>
+    </Instance>
+    <Instance classID="ChoiceBoxModel" instanceID="ChoiceBoxModel2">
+        <Reference name="instanceName" value="str:formulaChoiceBox"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:750.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:550.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:220.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:30.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="onMouseClicked" value="prop2:7,NOT_SET,4,null,4,null,41,anim:,,str:formulaChoiceBoxOnMouseClicked,4,null,"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="items" value="prop2:7,NOT_SET,4,null,4,null,207,anim:,,sequence:22,str:SELECT THE FORMULA29,str:Use formula entered above27,str:y = Math.sin(x*10)*0.7f39,str:y = Math.pow(Math.sin(x*10),3)*0.7f43,str:y = Math.sin((x+0.1f)*60)/((x+0.1f)*60)13,str:y = x*x*x,4,null,"/>
+    </Instance>
+    <Instance classID="TextBoxModel" instanceID="TextBoxModel2">
+        <Reference name="instanceName" value="str:formulaEntryField"/>
+        <Reference name="cursor" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,cursor:TEXT,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:750.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:470.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:220.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:60.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="onMouseClicked" value="prop2:7,NOT_SET,4,null,4,null,42,anim:,,str:formulaEntryFieldOnMouseClicked,4,null,"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="promptText" value="prop2:7,NOT_SET,4,null,4,null,45,anim:,,str:Enter java compatible formula here,4,null,"/>
+        <Reference name="selectOnFocus" value="prop2:7,NOT_SET,4,null,4,null,17,anim:,,bool:false,4,null,"/>
+    </Instance>
+    <Instance classID="LabelModel" instanceID="LabelModel11">
+        <Reference name="instanceName" value="str:label"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:114.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:30.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="tooltip" value="null"/>
+        <Reference name="text" value="prop2:7,NOT_SET,4,null,4,null,66,anim:,,str:FUNCTION APPROXIMATION USING ARTIFICIAL NEURAL NETWORKS,4,null,"/>
+        <Reference name="graphic" value="null"/>
+    </Instance>
+    <Instance classID="RectangleShapeModel" instanceID="RectangleShapeModel5">
+        <Reference name="instanceName" value="str:rectangle4"/>
+        <Reference name="visible" value="prop2:7,NOT_SET,4,null,4,null,17,anim:,,bool:false,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:30.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:75.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="fill" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,color:WHITE,4,null,"/>
+        <Reference name="width" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:964.0,4,null,"/>
+        <Reference name="height" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:663.0,4,null,"/>
+        <Reference name="arcWidth" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:20.0,4,null,"/>
+        <Reference name="arcHeight" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:20.0,4,null,"/>
+    </Instance>
+    <Instance classID="LineChartModel" instanceID="LineChartModel2">
+        <Reference name="instanceName" value="str:cpuVsGpuChart"/>
+        <Reference name="visible" value="prop2:7,NOT_SET,4,null,4,null,17,anim:,,bool:false,4,null,"/>
+        <Reference name="layoutX" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:60.0,4,null,"/>
+        <Reference name="layoutY" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:105.0,4,null,"/>
+        <Reference name="layoutInfoWidth" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:904.0,4,null,"/>
+        <Reference name="layoutInfoHeight" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:603.0,4,null,"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="title" value="prop2:7,NOT_SET,4,null,4,null,64,anim:,,str:Number of patterns  vs time taken (for 10 iterations),4,null,"/>
+        <Reference name="customBackgroundContent" value="null"/>
+        <Reference name="showSymbols" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,bool:true,4,null,"/>
+        <Reference name="symbolCreator" value="prop2:7,NOT_SET,4,null,4,null,37,anim:,,str:cpuVsGpuChartSymbolCreator,4,null,"/>
+        <Reference name="data" value="prop2:7,NOT_SET,4,null,4,null,74,anim:,,sequence:26,inst:LineChartSeriesModel526,inst:LineChartSeriesModel6,4,null,"/>
+        <Reference name="xAxis" value="inst:NumberAxisModel3"/>
+        <Reference name="yAxis" value="inst:NumberAxisModel4"/>
+    </Instance>
+    <Instance classID="NumberAxisModel" instanceID="NumberAxisModel3">
+        <Reference name="instanceName" value="str:numOfPatternsAxis"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="label" value="prop2:7,NOT_SET,4,null,4,null,29,anim:,,str:Number of patterns,4,null,"/>
+        <Reference name="tickMarkStrokeWidth" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:1.0,4,null,"/>
+        <Reference name="upperBound" value="prop2:7,NOT_SET,4,null,4,null,18,anim:,,flt:17920.0,4,null,"/>
+        <Reference name="minorTickCount" value="prop2:7,NOT_SET,4,null,4,null,13,anim:,,int:16,4,null,"/>
+        <Reference name="tickUnit" value="prop2:7,NOT_SET,4,null,4,null,17,anim:,,flt:1536.0,4,null,"/>
+    </Instance>
+    <Instance classID="NumberAxisModel" instanceID="NumberAxisModel4">
+        <Reference name="instanceName" value="str:timeAxis"/>
+        <Reference name="gridLayoutInfoHLocation" value="int:0"/>
+        <Reference name="gridLayoutInfoVLocation" value="int:0"/>
+        <Reference name="clip" value="null"/>
+        <Map name="customProperties"/>
+        <Reference name="customClass" value="null"/>
+        <Reference name="label" value="prop2:7,NOT_SET,4,null,4,null,32,anim:,,str:Time taken in seconds,4,null,"/>
+        <Reference name="tickMarkStrokeWidth" value="prop2:7,NOT_SET,4,null,4,null,14,anim:,,flt:1.0,4,null,"/>
+        <Reference name="upperBound" value="prop2:7,NOT_SET,4,null,4,null,16,anim:,,flt:590.0,4,null,"/>
+        <Reference name="minorTickCount" value="prop2:7,NOT_SET,4,null,4,null,12,anim:,,int:1,4,null,"/>
+        <Reference name="tickUnit" value="prop2:7,NOT_SET,4,null,4,null,15,anim:,,flt:20.0,4,null,"/>
+    </Instance>
+</Model>

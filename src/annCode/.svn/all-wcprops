@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/10/trunk/src/annCode
+END
+TrainANNCpuMode.java
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/8/trunk/src/annCode/TrainANNCpuMode.java
+END
+TrainANN.java
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/7/trunk/src/annCode/TrainANN.java
+END
+TrainANNGpuMode.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/10/trunk/src/annCode/TrainANNGpuMode.java
+END

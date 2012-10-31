@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 25
+/svn/!svn/ver/6/trunk/lib
+END
+tools.jar
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/6/trunk/lib/tools.jar
+END
+jcuda-0.3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/6/trunk/lib/jcuda-0.3.1.jar
+END
+jcudaUtils-0.0.2.zip
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/6/trunk/lib/jcudaUtils-0.0.2.zip
+END

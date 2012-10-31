@@ -1,0 +1,81 @@
+applet.draggable=true
+applet.height=768
+applet.width=1024
+application.title=ann-on-gpu
+application.vendor=praveen
+build.classes.excludes=**/*.java,**/*.form,**/*.fx
+build.classpath=\
+    ${javac.classpath}:\
+    ${src.dir}:\
+    ${build.classes.dir}:
+# This directory is removed when the project is cleaned:
+build.dir=build
+build.generated.dir=${build.dir}/generated
+# Only compile against the classpath explicitly listed here:
+build.sysclasspath=ignore
+debug.classpath=\
+    ${run.classpath}
+# This directory is removed when the project is cleaned:
+dist.dir=dist
+dist.jar=${dist.dir}/ann-on-gpu.jar
+dist.javadoc.dir=${dist.dir}/javadoc
+excludes=
+file.reference.BackPropANN-JCuda-All-0.3.2RC-bin-windows-x86=JCuda-All-0.3.2RC-bin-windows-x86
+file.reference.jcublas-0.3.2RC.jar=JCuda-All-0.3.2RC-bin-windows-x86/jcublas-0.3.2RC.jar
+file.reference.jcuda-0.3.1.jar=../JCuda-All-0.3.1-bin-windows-x86/jcuda-0.3.1.jar
+file.reference.jcuda-0.3.1.jar-1=../../JCuda/JCuda-All-0.3.1-bin-windows-x86_64/jcuda-0.3.1.jar
+file.reference.jcuda-0.3.1.jar-2=build/lib/jcuda-0.3.1.jar
+file.reference.jcuda-0.3.1.jar-3=lib/jcuda-0.3.1.jar
+file.reference.jcuda-0.3.1.jar-4=lib/jcuda-0.3.1.jar
+file.reference.jcuda-0.3.2RC.jar=../JCuda-All-0.3.2RC-bin-windows-x86/jcuda-0.3.2RC.jar
+file.reference.jcudaUtils-0.0.2.zip=../../JCuda/jcudaUtils-0.0.2.zip
+file.reference.jcudaUtils-0.0.2.zip-1=build/lib/jcudaUtils-0.0.2.zip
+file.reference.jcudaUtils-0.0.2.zip-2=lib/jcudaUtils-0.0.2.zip
+file.reference.jcudaUtils-0.0.2.zip-3=lib/jcudaUtils-0.0.2.zip
+file.reference.jcudpp-0.3.2RC.jar=JCuda-All-0.3.2RC-bin-windows-x86/jcudpp-0.3.2RC.jar
+file.reference.jcufft-0.3.2RC.jar=JCuda-All-0.3.2RC-bin-windows-x86/jcufft-0.3.2RC.jar
+file.reference.jcurand-0.3.2RC.jar=JCuda-All-0.3.2RC-bin-windows-x86/jcurand-0.3.2RC.jar
+file.reference.jcusparse-0.3.2RC.jar=JCuda-All-0.3.2RC-bin-windows-x86/jcusparse-0.3.2RC.jar
+file.reference.mahout-distribution-0.5-src.zip=../mahout-distribution-0.5-src.zip
+file.reference.tools.jar=build/lib/tools.jar
+file.reference.tools.jar-1=lib/tools.jar
+file.reference.tools.jar-2=lib/tools.jar
+includes=**
+jar.compress=true
+javac.classpath=\
+    ${file.reference.jcuda-0.3.1.jar-3}:\
+    ${file.reference.jcudaUtils-0.0.2.zip-2}:\
+    ${file.reference.tools.jar-1}:\
+    ${file.reference.jcuda-0.3.1.jar-4}:\
+    ${file.reference.jcudaUtils-0.0.2.zip-3}:\
+    ${file.reference.tools.jar-2}
+# Space-separated list of extra javac options
+javac.compilerargs=
+javac.deprecation=false
+javac.source=1.5
+javac.target=1.5
+javadoc.additionalparam=
+javadoc.author=true
+javadoc.encoding=
+javadoc.private=true
+javadoc.version=false
+javafx.profile=desktop
+jnlp.codebase.type=local
+jnlp.codebase.url=file:/E:/Praveen/NetBeansProjects/ann-on-gpu/dist/
+jnlp.offline-allowed=true
+jnlp.packEnabled=false
+jnlp.signed=false
+jnlp.update.model=always
+main.class=main.Main
+manifest.file=manifest.mf
+pack200.jar.compress=true
+platform.active=default_fx_platform
+run.classpath=\
+    ${javac.classpath}:\
+    ${build.classes.dir}
+# Space-separated list of JVM arguments used when running the project
+# (you may also define separate properties like run-sys-prop.name=value instead of -Dname=value
+# or test-sys-prop.name=value to set system properties for unit tests):
+run.jvmargs=\ 
+source.encoding=UTF-8
+src.dir=src
